@@ -3,27 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercado App - Teste</title>
+    <title>Minha Família, Meu Tudo ❤️</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-slate-900 text-slate-100 flex flex-col items-center justify-center min-h-screen p-4">
+<body class="bg-gradient-to-tr from-slate-900 via-rose-950 to-slate-900 text-slate-100 min-h-screen flex flex-col items-center justify-between p-4 font-sans">
 
-    <div class="bg-slate-800 p-6 rounded-2xl shadow-xl max-w-sm w-full text-center border border-slate-700">
-        <h1 class="text-2xl font-bold text-emerald-400 mb-2">🛒 Mercado App</h1>
-        <p class="text-sm text-slate-400 mb-6">Ambiente configurado com sucesso no Termux!</p>
-        
-        <button onclick="testarBotao()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-semibold py-3 px-4 rounded-xl transition-all active:scale-95">
-            Testar Interação
-        </button>
-        
-        <p id="mensagem" class="mt-4 text-sm text-emerald-300 font-medium h-6"></p>
-    </div>
+    <header class="text-center my-6 max-w-md animate-fade-in">
+        <span class="text-rose-400 text-4xl">💝</span>
+        <h1 class="text-3xl font-extrabold tracking-tight mt-2 bg-gradient-to-r from-rose-400 to-amber-300 bg-clip-text text-transparent">
+            As Mulheres da Minha Vida
+        </h1>
+        <p class="text-slate-400 text-sm mt-2 px-4">
+            Uma pequena homenagem para lembrar o quanto vocês são importantes para mim todos os dias.
+        </p>
+    </header>
 
-    <script>
-        function testarBotao() {
-            const msg = document.getElementById('mensagem');
-            msg.innerText = "🚀 Conexão local + Git + Vercel ativa!";
-        }
-    </script>
+    <main class="max-w-sm w-full bg-slate-900/60 backdrop-blur-md rounded-3xl overflow-hidden border border-rose-500/20 shadow-2xl shadow-rose-950/50 my-auto">
+        
+        <div class="relative aspect-square w-full bg-slate-800 flex items-center justify-center overflow-hidden">
+            <img src="https://i.ibb.co/00NpF8r/image.jpg" alt="Minha Família Linda" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900 to-transparent h-24"></div>
+        </div>
+
+        <div class="p-6 pt-2">
+            <h2 class="text-xl font-bold text-rose-300 flex items-center gap-2">
+                Minha Companheira & Minhas Filhas
+            </h2>
+            
+            <p class="text-slate-300 text-sm leading-relaxed mt-3 italic">
+                "Vocês são o meu porto seguro, a minha maior motivação e a razão dos meus melhores sorrisos. Obrigado por encherem a nossa casa de amor, luz e alegria."
+            </p>
+
+            <div class="mt-6 pt-4 border-t border-slate-800 flex justify-between items-center text-xs text-rose-400/80 font-medium">
+                <span>Com todo o meu amor... ✨</span>
+                <span class="bg-rose-500/10 text-rose-300 px-2 py-1 rounded-full">Para sempre ❤️</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center my-6 text-xs text-slate-500">
+        Feito com o coração direto do Termux 🚀
+    </footer>
+
 </body>
 </html>
