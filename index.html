@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado App - Teste</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div class="bg-slate-800 p-6 rounded-2xl shadow-xl max-w-sm w-full text-center border border-slate-700">
+        <h1 class="text-2xl font-bold text-emerald-400 mb-2">🛒 Mercado App</h1>
+        <p class="text-sm text-slate-400 mb-6">Ambiente configurado com sucesso no Termux!</p>
+        
+        <button onclick="testarBotao()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-semibold py-3 px-4 rounded-xl transition-all active:scale-95">
+            Testar Interação
+        </button>
+        
+        <p id="mensagem" class="mt-4 text-sm text-emerald-300 font-medium h-6"></p>
+    </div>
+
+    <script>
+        function testarBotao() {
+            const msg = document.getElementById('mensagem');
+            msg.innerText = "🚀 Conexão local + Git + Vercel ativa!";
+        }
+    </script>
+</body>
+</html>
